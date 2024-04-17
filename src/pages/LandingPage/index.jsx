@@ -13,7 +13,7 @@ import Collection from './Sections/Collection'
 
 const LandingPage = () => {
 
-  const limit = 8; // 진열되는 상품이 보여지는 처음 디폴트값
+  const limit = 6; // 진열되는 상품이 보여지는 처음 디폴트값
   const [searchTerm, setSearchTerm] = useState(''); 
   const [products, setProducts] = useState([]);
   const [skip, setSkip] = useState(0);
@@ -189,12 +189,12 @@ const handleSearchTerm = (event) => {
       
        {/* Card */}
 
-       <div class="max-w-screen-xl px-4  sm:px-6 sm:py-12 lg:px-8">
+       <div className="max-w-screen-xl px-4  sm:px-6 sm:py-12 lg:px-8">
 
-        <header class="text-center">
-            <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">New Collection</h2>
+        <header className="text-center">
+            <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">New Collection</h2>
 
-            <p class="mx-auto mt-4 max-w-md text-gray-500 my-5">
+            <p className="mx-auto mt-4 max-w-md text-gray-500 my-5">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
               dicta incidunt est ipsam, officia dolor fugit natus?
             </p>
@@ -212,10 +212,10 @@ const handleSearchTerm = (event) => {
        {hasMore &&
           <div className='flex justify-center mt-2'>
             <button
-              className='px-2 py-2 mt- text-white bg-red-500 text-xs hover:bg-gray-500 rounded-lg transition duration-500 ease-in-out'
+              className='px-3 py-3 mt- text-white bg-red-500 text-xs hover:bg-gray-500 rounded-lg transition duration-500 ease-in-out'
               onClick={handleLoadMore}
             >
-              더보기 + 
+              상품 더보기 + 
             </button>
           </div>
        }   

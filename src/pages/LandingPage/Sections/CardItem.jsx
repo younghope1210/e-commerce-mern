@@ -9,7 +9,7 @@ const CardItem = ({ product }) => {
   
       <div className='rounded overflow-hidden relative shadow-lg flex flex-col gap-7 pb-2 mb-2'>
         
-              <div class="relative">
+              <div className="relative">
                 <ImageSlider images={product.images} />
                     <div className='hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-15'>
                     </div>

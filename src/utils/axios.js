@@ -12,7 +12,7 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
     baseURL: import.meta.env.PROD ?
-    'https://e-commerce-mern-back.onrender.com' : 'http://localhost:4000'
+    '' : 'http://localhost:4000'
 });
 
 
@@ -36,6 +36,7 @@ axiosInstance.interceptors.response.use(function(response){
 
 }, function(error){
     if(error.response.data === 'jwt expired') {
+        console.log('data:',error.response.data)
         window.location.reload();
     }
     return Promise.reject(error);

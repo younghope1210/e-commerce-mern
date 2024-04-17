@@ -54,8 +54,8 @@ const FileUpload = ({ onImageChange, images }) => {
       </Dropzone>
 
       <div className='flex-grow h-[300px] border flex  items-center justify-center overflow-x-scroll overflow-y-hidden'>
-        {images.map(image => (
-          <div key={image} onClick={() =>handleDelete(image)}>
+        {images.map((image,id) => (
+          <div key={id} onClick={() =>handleDelete(image)}>
             <img
               className='min-w-[300px] h-[300px]'
             //   src={`${import.meta.env.VITE_SERVER_URL}/${image}`}

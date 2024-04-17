@@ -106,7 +106,7 @@ const handleSubmit = async (event) => {
       <FileUpload images={product.images} onImageChange={handleImages} />
 
        <div className='mt-4'>
-          <lable htmlFor='title'>상품명</lable>
+          <label htmlFor='title'>상품명</label>
           <input 
             className='w-full px-4 py-2 bg-white border rounded-md'
             name="title"
@@ -117,7 +117,7 @@ const handleSubmit = async (event) => {
         </div>
 
         <div className='mt-4'>
-          <lable htmlFor='description'>상품 설명</lable>
+          <label htmlFor='description'>상품 설명</label>
           <input 
             className='w-full px-4 py-2 bg-white border rounded-md'
             name="description"
@@ -128,7 +128,7 @@ const handleSubmit = async (event) => {
         </div>
 
         <div className='mt-4'>
-          <lable htmlFor='price'>가격</lable>
+          <label htmlFor='price'>가격</label>
           <input 
             type="number"
             className='w-full px-4 py-2 bg-white border rounded-md'
@@ -140,7 +140,7 @@ const handleSubmit = async (event) => {
         </div>
 
         <div className='mt-4'>
-          <lable htmlFor='category'>카테고리</lable>
+          <label htmlFor='category'>카테고리</label>
           <select
             className='w-full px-4 mt-2 h-10 bg-white border rounded-md'
             name="categorys"
